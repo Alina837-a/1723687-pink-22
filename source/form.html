@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img  src="img/pink-logo.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">
+                Конкурс
+              </a>
+            </li>
+            <li  class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="contest">
+        <h1 class="contest__tour">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <section class="form">
+        <h2 class="visually-hidden">Заполните форму и выигрывайте призы</h2>
+        <p class="form__history">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
+          <form class="form__completed" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset class="form__write">
+              <legend class="visually-hidden">Пожалуйста, введите ваши данные в поля, как указывается ниже.</legend>
+              <p class="form__subtitle">
+                <label for="surname">Фамилия:</label>
+                <input class="form-lead" id="surname" type="text" name="name" required="required" placeholder="Укажите фамилию &#42;">
+              </p>
+              <p class="form__subtitle">
+                <label for="name">Имя:</label>
+                <input class="form-lead" id="name" type="text" name="name" required="required" placeholder="Введите ваше имя &#42;">
+              </p>
+              <p class="form__subtitle">
+                <label for="patronymic">Отчество:</label>
+                <input class="form-lead" id="patronymic" type="text" name="name"  placeholder="Ну и отчество тоже">
+              </p>
+            </fieldset>
+            <fieldset class="form__mark">
+              <div class="form__wrapper">
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <ul class="form__list">
+                  <li class="form__item form__item_checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filtres-selfie" checked>
+                    <label class="form__filters form__label">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="form__item form__item_checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filtres-beach" checked>
+                    <label class="form__filters form__label">Обгорел на пляже</label>
+                  </li>
+                  <li class="form__item form__item_checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filtres-chuck-norris">
+                    <label class="form__filters form__label">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form__item form__item_checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filtres-souvenir">
+                    <label class="form__filters form__label">Накупил сувениров</label>
+                  </li>
+                  <li class="form__item form__item_checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters"  id="filtres-tower" checked>
+                    <label class="form__filters form__label">Удержал башню</label>
+                  </li>
+                  <li class="form__item form__item_checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filtres-hotel">
+                    <label class="form__filters form__label">Разгромил отель</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="form__info">
+              <legend class="visually-hidden">Контактная информация</legend>
+              <p class="form__phone">
+                <label for="phone">Номер телефона</label>
+                <input class="form__number"  type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="form__address">
+                <label for="email">Адрес почты</label>
+                <input class="form-email" id="email" type="email" name="email" placeholder="Введите почту &#42;" >
+              </p>
+            </fieldset>
+            <fieldset class="form__applications">
+              <div class="form__wrapper">
+                <legend>С каким приложением путешествовали?</legend>
+                <ul>
+                  <li class="form__item form__item-radio">
+                    <input class="visually-hidden form__radio_input" type="radio" value="company" id="company-ios" checked>
+                    <label class="form__system form__label">Pink для iOS</label>
+                  </li>
+                  <li class="form__item form__item-radio">
+                    <input class="visually-hidden form__radio_input" type="radio" value="company" id="company-android">
+                    <label class="form__system form__label">Pink на Android</label>
+                  </li>
+                  <li class="form__item form__item-radio">
+                    <input class="visually-hidden form__radio_input" type="radio" value="company" id="company-windows">
+                    <label class="form__system form__label">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <p class="form__free">
+              <label for="text">Опишите свои эмоции</label>
+              <textarea class="form__text" id="text" name="text"  placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
+            </p>
+            <button class="form__button" type="submit">Отправить форму</button>
+            <p class="form__compulsory"><span>*</span> &#8210; Обязательные формы</p>
+            </fieldset>
+          </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img  src="img/logo-footer.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
+      </a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Инстаграме</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
