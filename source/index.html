@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -48,23 +49,25 @@
           <p class="download-app__slogan">
             Взгляните на жизнь иначе
           </p>
-          <a class="download-app__button-app" href="https://www.apple.com/ru/app-store/">
-            Скачать приложение
-          </a>
-          <ul class="download-app__list">
-            <li class="download-app__item">
-              <a class="download-app__app-store" href="https://www.apple.com/ru/app-store/" aria-label="app-store"></a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__google-play" href="https://play.google.com/store/apps;hl=ru?hl=ru&gl=US" aria-label="google play"></a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__microsoft" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="microsoft"></a>
-            </li>
-          </ul>
-          <p class="download-app__intro">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          <div class="download-app__block">
+            <a class="download-app__button-app" href="https://www.apple.com/ru/app-store/">
+              Скачать приложение
+            </a>
+            <ul class="download-app__list">
+              <li class="download-app__item">
+                <a class="download-app__app-store" href="https://www.apple.com/ru/app-store/" aria-label="app-store"></a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__google-play" href="https://play.google.com/store/apps;hl=ru?hl=ru&gl=US" aria-label="google play"></a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__microsoft" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="microsoft"></a>
+              </li>
+            </ul>
+            <p class="download-app__intro">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -120,10 +123,10 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item">
               <div class="reviews__author-info">
+                <p class="reviews__author-name">Николай Петров</p>
                 <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
-                <p class="reviews__author-name">Николай Петров</p>
                 <p class="reviews__author-age-profession">
                   25 лет, водитель трамвая
                 </p>
@@ -208,7 +211,7 @@
         <div class="contacts__phone">
           <h3 class="contacts__title">Звоните:</h3>
           <a  href="tel:+78125556666">
-            <span class="contacts__phone-mobile"></span> +7 (812) 555-66-66
+            <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
           </a>
         </div>
         <div class="contacts__address">
