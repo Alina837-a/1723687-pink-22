@@ -1,0 +1,29 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #283645;
+}
+
+.page__top-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 22px 0;
+  width: 290px;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 27px 0 43px 0;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
