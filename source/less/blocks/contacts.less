@@ -1,30 +1,118 @@
 .contacts__questions {
-  line-height: 28px;
-  margin-bottom: 45px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 29px;
   font-weight: 300;
+@media (min-width: @tablet-width) {
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 54px;
+}
+@media (min-width: @desktop-width) {
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 68px;
+}
+}
+.contacts__connection {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 29px;
+  font-weight: 300;
+  margin-bottom: 45px;
+@media (min-width: @tablet-width) {
+  margin-bottom: 51px;
+  font-size: 40px;
+  line-height: 54px;
+}
+@media (min-width: @desktop-width) {
+  margin-bottom: 61px;
+  font-size: 50px;
+  line-height: 68px;
+}
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+@media (min-width: @tablet-width) {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (min-width: @desktop-width) {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+}
+
+.contacts__item {
+  margin-bottom: 31px;
+  text-align: center;
+@media (min-width: @tablet-width) {
+  margin-bottom: 55px;
+}
+@media (min-width: @desktop-width) {
+  margin-bottom: 10px;
+  height: 99px;
+}
+}
+
+.contacts__item:not(:last-child) {
+@media (min-width: @tablet-width) {
+  margin-bottom: 0;
+}
+}
+
+.contacts__phone {
+@media (min-width: @tablet-width) {
+  padding-left: 63px;
+  margin-right: 97px;
+}
+@media (min-width: @desktop-width) {
+  margin: 0;
+  padding: 0;
+  margin-right: 111px;
+}
+}
+
+.contacts__address {
+@media (min-width: @tablet-width) {
+  order: 3;
+  padding-left: 225px;
+  width: 219px;
+}
+@media (min-width: @desktop-width) {
+  padding: 0;
+  margin: 0;
+  margin-right: 94px;
+}
+}
+
+.contacts__email {
+@media (min-width: @desktop-width) {
+  order: 3;
+}
 }
 
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+@media (min-width: @tablet-width) {
+  margin-bottom: 17px;
+}
 }
 
-.contacts a {
+.contacts__info {
   color: #d22856;
   line-height: 33px;
   text-decoration: none;
   font-weight: 300;
-}
-
-.contacts__address-address {
-  color: #d22856;
-  line-height: 33px;
-  font-weight: 300;
-}
-
-.contacts__email-address {
-  color: #d22856;
-  line-height: 33px;
-  font-weight: 300;
+  margin: 0;
+  padding: 0;
 }

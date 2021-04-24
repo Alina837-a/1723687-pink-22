@@ -1,29 +1,31 @@
 .page-header {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__opened {
   background-color: #283645;
 }
 
 .page__top-menu {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0 22px 0;
-  width: 290px;
-  @media (min-width: @tablet-width) {
-    width: 620px;
-    margin: 0 auto;
-    padding: 27px 0 43px 0;
-  }
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .page-header__logo {
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+@media (min-width: @desktop-width) {
+  display: none;
+}
 }
 
 .page__toggle {
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+@media (min-width: @desktop-width) {
+  display: none;
+}
 }
