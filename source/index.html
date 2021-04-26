@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header__opened">
+    <header class="page-header page-header--opened">
       <div class="page__top-menu container">
         <a class="page-header__logo">
           <img  src="img/pink-logo.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
@@ -16,7 +16,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="page-header__nav main-nav main-nav__closed main-nav__opened">
+      <nav class="page-header__nav main-nav  main-nav--opened">
         <ul class=
         "main-nav__list">
           <li class="main-nav__item main-nav__item--current">
@@ -79,7 +79,7 @@
             Нам есть, что вам предложить!
           </p>
           <div class="advantages__wrapper">
-            <ul class="advantages__list">
+            <ul class="advantages__list container">
               <li class="advantages__item advantages__title--mood">
                 <h3 class="advantages__title">
                   Поднимает настроение
@@ -209,8 +209,8 @@
           </tr>
           </table>
           <p class="filters__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
@@ -221,19 +221,17 @@
           <p class="contacts__questions">Остались вопросы?</p>
           <p class="contacts__connection">Свяжитесь с нами!</p>
           <div class="contacts__list">
-            <div class="contacts__item contacts__phone">
+            <div class="contacts__item contacts__item--phone">
               <h3 class="contacts__title">Звоните:</h3>
-              <a class="contacts__info" href="tel:+78125556666">
-                <span">+7 (812) 555-66-66</span>
-              </a>
+              <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__item contacts__address">
+            <div class="contacts__item contacts__item--address">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
               <p class="contacts__info">
                 ул. Большая Конюшенная, 19/8
               </p>
             </div>
-            <div class="contacts__item contacts__email">
+            <div class="contacts__item contacts__item--email">
               <h3 class="contacts__title">Пишите:</h3>
               <a class="contacts__info" href="mailto:mail@htmlacademy.ru" aria-label="адрес электронной почты">mail@htmlacademy.ru</a>
             </div>
@@ -246,11 +244,9 @@
     </main>
 
     <footer class="page-footer container">
-      <div class="page-footer__logo">
-        <a class="page-footer__link">
-          <img  src="img/logo-footer.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
-        </a>
-      </div>
+      <a class="page-footer__logo">
+        <img  src="img/logo-footer.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
+      </a>
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Вконтакте</span></a>

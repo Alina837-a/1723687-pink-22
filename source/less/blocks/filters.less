@@ -4,14 +4,24 @@
 }
 
 .filters__wrapper {
-  width: 320px;
+  position: relative;
+  width: 280px;
   overflow: hidden;
   margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .filters__table {
-  width: 100%;
+  width: 840px;
   border-collapse: collapse;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 }
 
 .filters__pink {
@@ -20,6 +30,9 @@
   padding-bottom: 0;
   font-size: 14px;
   line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .filters__smile {
@@ -28,6 +41,9 @@
   width: 280px;
   font-size: 14px;
   line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .filters__comment {
@@ -35,6 +51,9 @@
   width: 280px;
   font-size: 14px;
   line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .filters__redactor {
@@ -50,12 +69,37 @@
 }
 
 .filters__tariff {
-  padding: 19px 100px 35px 101px;
+  box-sizing: border-box;
+  padding: 19px 116px 35px 117px;
   width: 280px;
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    padding: 19px 38px 16px 39px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 233px;
+    padding: 23px 66px 25px 67px;
+  }
 }
 
 .filters__hide {
   display: none;
+  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: #ffffff;
+    width: 153px;
+    padding: 18px 24px 17px 15px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 234px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 23px 65px 23px 22px;
+  }
 }
 
 .filters__toggles {
