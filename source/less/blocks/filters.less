@@ -2,3 +2,111 @@
   background-color: #f2f2f2;
   margin-bottom: 50px;
 }
+
+.filters__wrapper {
+  position: relative;
+  width: 280px;
+  overflow: hidden;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.filters__table {
+  width: 840px;
+  border-collapse: collapse;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+}
+
+.filters__pink {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  font-size: 14px;
+  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.filters__smile {
+  margin: 0;
+  padding: 24px 125px 25px 20px;
+  width: 280px;
+  font-size: 14px;
+  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.filters__comment {
+  padding: 24px 125px 25px 20px;
+  width: 280px;
+  font-size: 14px;
+  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.filters__redactor {
+  border: 2px solid #e5e5e5;
+  border-radius: 1px 0 0 0;
+}
+.filters__price {
+  background: #283645;
+  border: 2px solid #283645;
+  border-radius: 1px 0 0 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.filters__tariff {
+  box-sizing: border-box;
+  padding: 19px 116px 35px 117px;
+  width: 280px;
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    padding: 19px 38px 16px 39px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 233px;
+    padding: 23px 66px 25px 67px;
+  }
+}
+
+.filters__hide {
+  display: none;
+  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: #ffffff;
+    width: 153px;
+    padding: 18px 24px 17px 15px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 234px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 23px 65px 23px 22px;
+  }
+}
+
+.filters__toggles {
+@media (min-width: @tablet-width) {
+  display: block;
+}
+@media (min-width: @desktop-width) {
+  display: block;
+}
+}
