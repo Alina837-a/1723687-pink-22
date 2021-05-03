@@ -2,42 +2,43 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=divace-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img  src="img/pink-logo.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="page-header page-header--opened">
+      <div class="page__top-menu container">
+        <a class="page-header__logo">
+          <img  src="img/pink-logo.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
+        </a>
+        <button class="page__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">
-                Конкурс
-              </a>
-            </li>
-            <li  class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <nav class="page-header__nav main-nav  main-nav--opened">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">
+              Конкурс
+            </a>
+          </li>
+          <li  class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -49,7 +50,7 @@
         <h2 class="visually-hidden">Заполните форму и выигрывайте призы</h2>
         <p class="form__history">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
           <form class="form__completed" method="GET" action="https://echo.htmlacademy.ru">
-            <fieldset class="form__write">
+            <fieldset class="form__write container">
               <legend class="visually-hidden">Пожалуйста, введите ваши данные в поля, как указывается ниже.</legend>
               <p class="form__subtitle">
                 <label for="surname">Фамилия:</label>
@@ -67,35 +68,35 @@
             <fieldset class="form__mark">
               <div class="form__wrapper">
                 <legend>Ваши безбашенные достижения в путешествии</legend>
-                <ul class="form__list">
+                <ul class="form__list container">
                   <li class="form__item form__item--checkbox">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filtres-selfie" checked>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filters-selfie" checked>
                     <label class="form__filters form__label">Сделал селфи с акулой</label>
                   </li>
                   <li class="form__item form__item--checkbox">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filtres-beach" checked>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filters-beach" checked>
                     <label class="form__filters form__label">Обгорел на пляже</label>
                   </li>
                   <li class="form__item form__item--checkbox">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filtres-chuck-norris">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-chuck-norris">
                     <label class="form__filters form__label">Видел Чака Норриса</label>
                   </li>
                   <li class="form__item form__item--checkbox">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filtres-souvenir">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-souvenir">
                     <label class="form__filters form__label">Накупил сувениров</label>
                   </li>
                   <li class="form__item form__item--checkbox">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters"  id="filtres-tower" checked>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters"  id="filters-tower" checked>
                     <label class="form__filters form__label">Удержал башню</label>
                   </li>
                   <li class="form__item form__item--checkbox">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filtres-hotel">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-hotel">
                     <label class="form__filters form__label">Разгромил отель</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="form__info">
+            <fieldset class="form__info container">
               <legend class="visually-hidden">Контактная информация</legend>
               <p class="form__phone">
                 <label for="phone">Номер телефона</label>
@@ -109,7 +110,7 @@
             <fieldset class="form__applications">
               <div class="form__wrapper">
                 <legend>С каким приложением путешествовали?</legend>
-                <ul>
+                <ul class="form__list">
                   <li class="form__item form__item--radio">
                     <input class="visually-hidden form__radio-input" type="radio" value="company" id="company-ios" checked>
                     <label class="form__system form__label">Pink для iOS</label>
@@ -125,35 +126,38 @@
                 </ul>
               </div>
             </fieldset>
-            <p class="form__free">
-              <label for="text">Опишите свои эмоции</label>
-              <textarea class="form__text" id="text" name="text"  placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
-            </p>
-            <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__compulsory"><span>*</span> &#8210; Обязательные формы</p>
+            <fieldset class="form__emotions container">
+              <p class="form__free">
+                <label for="text">Опишите свои эмоции</label>
+                <textarea class="form__text" id="text" name="text"  placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
+              </p>
             </fieldset>
+            <div class="form__dispatch container">
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__compulsory"><span>*</span> &#8210; Обязательные формы</p>
+            </div>
           </form>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo">
         <img  src="img/logo-footer.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
       </a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Вконтакте</a>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Вконтакте</span></a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Инстаграме</a>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g"><span class="visually-hidden">Мы в Инстаграме</span></a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
   </body>
