@@ -52,85 +52,89 @@
           <form class="form__completed" method="GET" action="https://echo.htmlacademy.ru">
             <fieldset class="form__write container">
               <legend class="visually-hidden">Пожалуйста, введите ваши данные в поля, как указывается ниже.</legend>
-              <p class="form__subtitle">
-                <label for="surname">Фамилия:</label>
+              <p class="form__wrap">
+                <label class="form__label" for="surname">Фамилия:</label>
                 <input class="form-lead" id="surname" type="text" name="name" required="required" placeholder="Укажите фамилию &#42;">
               </p>
-              <p class="form__subtitle">
-                <label for="name">Имя:</label>
+              <p class="form__wrap">
+                <label class="form__label" for="name">Имя:</label>
                 <input class="form-lead" id="name" type="text" name="name" required="required" placeholder="Введите ваше имя &#42;">
               </p>
-              <p class="form__subtitle">
-                <label for="patronymic">Отчество:</label>
+              <p class="form__wrap">
+                <label class="form__label" for="patronymic">Отчество:</label>
                 <input class="form-lead" id="patronymic" type="text" name="name"  placeholder="Ну и отчество тоже">
               </p>
             </fieldset>
-            <fieldset class="form__mark form__wrapper">
-              <legend>Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form__list">
-                <li class="form__item form__item--checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filters-selfie" checked>
-                  <label class="form__filters form__label" for="filters-selfie">Сделал селфи с акулой</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filters-beach" checked>
-                  <label class="form__filters form__label" for="filters-beach">Обгорел на пляже</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-chuck-norris">
-                  <label class="form__filters form__label" for="filters-chuck-norris">Видел Чака Норриса</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-souvenir">
-                  <label class="form__filters form__label" for="filters-souvenir">Накупил сувениров</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters"  id="filters-tower" checked>
-                  <label class="form__filters form__label" for="filters-tower">Удержал башню</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-hotel">
-                  <label class="form__filters form__label" for="filters-hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__wrapper form__wrapper--mark">
+              <fieldset class="form__mark container">
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <ul class="form__list form__list--checkbox">
+                  <li class="form__item form__item--1 form__item--checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filters-selfie" checked>
+                    <label class="form__filters" for="filters-selfie">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="form__item form__item--4 form__item--checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="filters" id="filters-beach" checked>
+                    <label class="form__filters" for="filters-beach">Обгорел на пляже</label>
+                  </li>
+                  <li class="form__item form__item--2 form__item--checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-chuck-norris">
+                    <label class="form__filters" for="filters-chuck-norris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form__item form__item--5 form__item--checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-souvenir">
+                    <label class="form__filters" for="filters-souvenir">Накупил сувениров</label>
+                  </li>
+                  <li class="form__item form__item--3 form__item--checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters"  id="filters-tower" checked>
+                    <label class="form__filters" for="filters-tower">Удержал башню</label>
+                  </li>
+                  <li class="form__item form__item--6 form__item--checkbox">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox"  name="filters" id="filters-hotel">
+                    <label class="form__filters " for="filters-hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="form__info container">
               <legend class="form__contact">Контактная информация</legend>
               <p class="form__phone">
-                <label for="phone">Номер телефона</label>
+                <label class="form__label" for="phone">Номер телефона</label>
                 <input class="form__number"  type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </p>
               <p class="form__address">
-                <label for="email">Адрес почты</label>
+                <label class="form__label" for="email">Адрес почты</label>
                 <input class="form-email" id="email" type="email" name="email" placeholder="Введите почту &#42;" >
               </p>
             </fieldset>
-            <fieldset class="form__applications form__wrapper">
-              <legend>С каким приложением путешествовали?</legend>
-              <ul class="form__list">
-                <li class="form__item form__item--radio">
-                  <input class="visually-hidden form__radio-input" type="radio" name="company-app" value="company" id="company-ios" checked>
-                  <label class="form__system form__label" for="company-ios">Pink для iOS</label>
-                </li>
-                <li class="form__item form__item--radio">
-                  <input class="visually-hidden form__radio-input" type="radio" name="company-app" value="company" id="company-android">
-                  <label class="form__system form__label" for="company-android">Pink на Android</label>
-                </li>
-                <li class="form__item form__item--radio">
-                  <input class="visually-hidden form__radio-input" type="radio" name="company-app" value="company" id="company-windows">
-                  <label class="form__system form__label" for="company-windows">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__wrapper form__wrapper--application">
+              <fieldset class="form__applications container">
+                <legend>С каким приложением путешествовали?</legend>
+                <ul class="form__list">
+                  <li class="form__item form__item--radio">
+                    <input class="visually-hidden form__radio-input" type="radio" name="company-app" value="company" id="company-ios" checked>
+                    <label class="form__system" for="company-ios">Pink для iOS</label>
+                  </li>
+                  <li class="form__item form__item--radio">
+                    <input class="visually-hidden form__radio-input" type="radio" name="company-app" value="company" id="company-android">
+                    <label class="form__system" for="company-android">Pink на Android</label>
+                  </li>
+                  <li class="form__item form__item--radio">
+                    <input class="visually-hidden form__radio-input" type="radio" name="company-app" value="company" id="company-windows">
+                    <label class="form__system" for="company-windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="form__emotions container">
               <p class="form__free">
-                <label for="text">Опишите свои эмоции</label>
+                <label class="form__label" for="text">Опишите свои эмоции</label>
                 <textarea class="form__text" id="text" name="text"  placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
               </p>
             </fieldset>
             <div class="form__dispatch container">
               <button class="form__button" type="submit">Отправить форму</button>
-              <p class="form__compulsory"><span>*</span> &#8210; Обязательные формы</p>
+              <p class="form__compulsory"><span>*</span> &#8210; Обязательные поля</p>
             </div>
           </form>
       </section>
