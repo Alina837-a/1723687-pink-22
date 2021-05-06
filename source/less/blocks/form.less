@@ -11,13 +11,7 @@
 
 
 .form__history {
-  margin: 0 auto;
-  margin-bottom: 55px;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
   width: 280px;
-  box-sizing: border-box;
   @media (min-width: @tablet-width) {
     width: 490px;
     font-size: 18px;
@@ -26,6 +20,18 @@
   @media (min-width: @desktop-width) {
     width: 756px;
     margin-bottom: 70px;
+  }
+}
+
+.subtitle {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
   }
 }
 
@@ -120,12 +126,22 @@
 }
 
 .form__mark {
-  padding-bottom: 44px;
   border: 0;
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+  }
+}
+
+.form__wrapper--mark {
+  margin-bottom: 42px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  @media (min-width: @tablet-width) {
+    order: 4;
+    margin-bottom: 65px;
+    padding-bottom: 50px;
   }
   @media (min-width: @desktop-width) {
     padding: 0;
@@ -133,19 +149,10 @@
   }
 }
 
-.form__wrapper--mark {
-  margin-bottom: 42px;
-  @media (min-width: @tablet-width) {
-    order: 4;
-    margin-bottom: 65px;
-  }
-}
-
 .form__mark legend {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-top: 42px;
   color: #d22856;
   margin-bottom: 44px;
   font-size: 14px;
@@ -154,7 +161,6 @@
   text-align: center;
   width: 218px;
   @media (min-width: @tablet-width) {
-    padding-top: 0;
     width: 436px;
     padding-left: 31px;
     padding-right: 31px;
@@ -253,6 +259,7 @@
   height: 16px;
   border: 0;
   background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
 }
 
 .form__filters {
@@ -382,7 +389,6 @@
 
 .form__applications {
   border: 0;
-  padding-bottom: 42px;
   @media (min-width: @tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
@@ -395,6 +401,8 @@
 
 .form__wrapper--application {
   margin-bottom: 42px;
+  padding-bottom: 42px;
+  padding-top: 42px;
   @media (min-width: @tablet-width) {
     order: 2;
     margin-bottom: 65px;
@@ -468,7 +476,6 @@
 .form__applications legend {
   margin: 0 auto;
   padding: 0;
-  padding-top: 42px;
   color: #d22856;
   margin-bottom: 44px;
   font-size: 14px;
@@ -477,7 +484,6 @@
   text-align: center;
   @media (min-width: @tablet-width) {
     padding: 0 25px;
-
   }
 }
 

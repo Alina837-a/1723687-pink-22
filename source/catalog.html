@@ -2,114 +2,129 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=divace-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img  src="img/pink-logo.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="page-header page-header--opened">
+      <div class="page__top-menu container">
+        <a class="page-header__logo">
+          <img  src="img/pink-logo.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
+        </a>
+        <button class="page__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li  class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <nav class="page-header__nav main-nav  main-nav--opened">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li  class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="page-main">
-      <div class="user">
-        <h1 class="user__photo">Фотографии пользователей</h1>
+      <div class="title-wrapper title-wrapper--photo">
+        <h1 class="title title__photo">Фотографии пользователей</h1>
       </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
-        <p class="catalog__view">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="catalog__view subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="catalog__panorama">
           <img class="catalog__photo catalog__photo--panorama" src="img/panorama.jpg" alt="Панорама с высоты" width="320" height="137">
           <h3 class="catalog__caption">Панорама дня</h3>
-          <div class="catalog-card">
-            <p class="catalog__title">Анна</p>
-            <time class="catalog__time">(5 минут назад)</time>
-            <p class="catalog__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-            <p class="catalog__like">Нравится:215</p>
+          <div class="catalog__card catalog__card--panorama container">
+            <p class="catalog__title catalog__title--panorama">Анна</p>
+            <time class="catalog__time catalog__time--panorama">(5 минут назад)</time>
+            <p class="catalog__comment catalog__comment--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button class="catalog__button catalog__button--panorama" type="button" aria-label="Поставить лайк"></button>
+            <p class="catalog__like catalog__like--panorama">Нравится:215</p>
           </div>
         </div>
-        <div class="catalog__card">
-          <img class="catalog__photo" src="img/photo-1-mobile.jpg" alt="машина" width="280" height="180">
-          <p class="catalog__title">Левон</p>
-          <time class="catalog__time">(5 часов назад)</time>
-          <p class="catalog__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="catalog__like">Нравится:356</p>
-        </div>
-        <div class="catalog__card">
-          <img class="catalog__photo" src="img/photo-2-mobile.jpg" alt="барабан" width="280" height="180">
-          <p class="catalog__title">Антон</p>
-          <time class="catalog__time">(12 часов назад)</time>>
-          <p class="catalog__comment">Соседи будут рады!</p>
-          <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="catalog__like">Нравится:666</p>
-        </div>
-        <div class="catalog__card">
-          <img class="catalog__photo" src="img/photo-3-tablet.jpg" alt="окна" width="280" height="180">
-          <p class="catalog__title">Борис</p>
-          <time class="catalog__time">(20 часов назад)</time>
-          <p class="catalog__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="catalog__like">Нравится:215</p>
-        </div>
-        <div class="catalog__card">
-          <img class="catalog__photo" src="img/photo-4-tablet.jpg" alt="ярмарка" width="280" height="180">
-          <p class="catalog__title">Сергей</p>
-          <time class="catalog__time">(25 часов назад)</time>
-          <p class="catalog__comment">Самая кубанская в мире!</p>
-          <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="catalog__like">Нравится:4</p>
-        </div>
-        <div class="catalog__card">
-          <img class="catalog__photo" src="img/photo-5-tablet.jpg" alt="горы" width="280" height="180">
-          <p class="catalog__title">Максим</p>
-          <time class="catalog__time">(40 часов назад)</time>
-          <p class="catalog__comment">Где снег-то?</p>
-          <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="catalog__like">Нравится:150</p>
-        </div>
-        <div class="catalog__card">
-          <img class="catalog__photo" src="img/photo-6-tablet.jpg" alt="самолет" width="280" height="180">
-          <p class="catalog__title">Надежда</p>
-          <time class="catalog__time">(45 часов назад)</time>
-          <p class="catalog__comment">Всем GM и взаимные лайки!</p>
-          <button class="button__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="catalog__like">Нравится:2560</p>
-        </div>
+        <ul class="catalog__list container">
+          <li class="catalog__item">
+            <img class="catalog__photo" src="img/photo-1-mobile.jpg" alt="машина" width="280" height="180">
+            <div class="catalog__card">
+              <p class="catalog__title">Левон</p>
+              <time class="catalog__time">(5 часов назад)</time>
+              <p class="catalog__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="catalog__button" type="button" aria-label="Поставить лайк"></button>
+              <p class="catalog__like">Нравится:356</p>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__photo" src="img/photo-2-mobile.jpg" alt="барабан" width="280" height="180">
+            <div class="catalog__card">
+              <p class="catalog__title">Антон</p>
+              <time class="catalog__time">(12 часов назад)</time>
+              <p class="catalog__comment">Соседи будут рады!</p>
+              <button class="catalog__button" type="button" aria-label="Поставить лайк"></button>
+              <p class="catalog__like">Нравится:666</p>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__photo" src="img/photo-3-tablet.jpg" alt="окна" width="280" height="180">
+            <div class="catalog__card">
+              <p class="catalog__title">Борис</p>
+              <time class="catalog__time">(20 часов назад)</time>
+              <p class="catalog__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="catalog__button" type="button" aria-label="Поставить лайк"></button>
+              <p class="catalog__like">Нравится:215</p>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__photo" src="img/photo-4-tablet.jpg" alt="ярмарка" width="280" height="180">
+            <div class="catalog__card">
+              <p class="catalog__title">Сергей</p>
+              <time class="catalog__time">(25 часов назад)</time>
+              <p class="catalog__comment">Самая кубанская в мире!</p>
+              <button class="catalog__button" type="button" aria-label="Поставить лайк"></button>
+              <p class="catalog__like">Нравится:4</p>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__photo" src="img/photo-5-tablet.jpg" alt="горы" width="280" height="180">
+            <div class="catalog__card">
+              <p class="catalog__title">Максим</p>
+              <time class="catalog__time">(40 часов назад)</time>
+              <p class="catalog__comment">Где снег-то?</p>
+              <button class="catalog__button" type="button" aria-label="Поставить лайк"></button>
+              <p class="catalog__like">Нравится:150</p>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__photo" src="img/photo-6-tablet.jpg" alt="самолет" width="280" height="180">
+            <div class="catalog__card">
+              <p class="catalog__title">Надежда</p>
+              <time class="catalog__time">(45 часов назад)</time>
+              <p class="catalog__comment">Всем GM и взаимные лайки!</p>
+              <button class="catalog__button" type="button" aria-label="Поставить лайк"></button>
+              <p class="catalog__like">Нравится:2560</p>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="editor">
-        <section class="editor__filters">
+        <section class="editor__filters container">
           <h2 class="visually-hidden">Фильтры</h2>
           <p class="editor__subsection">Затмите их всех!</p>
           <p class="editor__subsection">Выкладывайте  все,что накопилось в телефоне!</p>
@@ -117,9 +132,9 @@
         <form class="editor__correction" method="GET" action="https://echo.htmlacademy.ru">
           <input class="visually-hidden" id="file-input" type="file" name="file">
           <label class="editor__label" for="file-input"></label>
-          <ul class="editor__list">
+          <ul class="editor__list container">
             <li class="editor__item editor__item--crop">
-              <button class="editor__button" type="button">
+              <button class="editor__buttons" type="button">
                 <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 00-4-4H16v4h16v16zm-20 4V0H8v8H0v4h8v20a4 4 0 004 4h20v8h4v-8h8v-4H12z" fill="#D22856"/></svg>
               </button>
               <div class="editor__controls">
@@ -128,7 +143,7 @@
               </div>
             </li>
             <li class="editor__item editor__item--fill">
-              <button class="editor__button" type="button">
+              <button class="editor__buttons" type="button">
                 <svg width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11a3 3 0 004.24 0l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 108 0c0-2.67-4-7-4-7zM48 40H0v3h48v-3z"/></g></svg>
               </button>
               <div class="editor__controls">
@@ -137,7 +152,7 @@
               </div>
             </li>
             <li class="editor__item editor__item--contrast">
-              <button class="editor_button" type="button">
+              <button class="editor__buttons" type="button">
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 110 24 12 12 0 010-24zm0-4a16 16 0 100 32 16 16 0 000-32zM16 24.29a8.52 8.52 0 000-17"/></g></svg>
               </button>
               <div class="editor__controls">
@@ -146,30 +161,32 @@
               </div>
             </li>
           </ul>
-          <button class="spread__button spread__button--send" type="submit">Запостить</button>
-          <button class="spread__button" disabled type="reset">Отмена</button>
+          <div class="editor__post container">
+            <button class="editor__button editor__button--send" type="submit">Запостить</button>
+            <button class="editor__button" disabled type="reset">Отмена</button>
+          </div>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo">
         <img  src="img/logo-footer.png" width="145" height="40" alt="Логотип мобильного приложения Pink">
       </a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Вконтакте</a>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Вконтакте</span></a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Инстаграме</a>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g"><span class="visually-hidden">Мы в Инстаграме</span></a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
   </body>
