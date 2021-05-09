@@ -1,19 +1,28 @@
 .editor {
-  margin-bottom: 40px;
+  padding-bottom: 41px;
 }
 
 .editor__filters {
   margin-bottom: 52px;
   padding: 0;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 78px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .editor__subsection {
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
+  text-align: center;
 }
 
 .editor__correction {
   background-color: #f2f2f2;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 41px;
 }
@@ -24,37 +33,88 @@
 
 .editor__list {
   list-style: none;
+  margin-left: 35px;
   margin-bottom: 39px;
+  display: flex;
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin-bottom: 67px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 166px;
+  }
 }
 
 .editor__item {
-  margin-left: 35px;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+  text-align: center;
+  display: flex;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.editor__buttons {
+  border: none;
+}
+
+.editor__item:nth-last-of-type(1) {
+  margin-right: 0;
 }
 
 .editor__controls {
-  margin-bottom: 73px;
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
-.spread__button {
+.editor__post {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.editor__button {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  color: #283645;
   height: 55px;
   width: 280px;
   padding: 5px;
-  margin-bottom: 38px;
-  border: 3px solid #283645;
-  box-sizing: border-box;
-  border-radius: 30px;
-  opacity: 0.1;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
-.spread__button--send {
   color: #d22856;
   opacity: 1;
   border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 44px;
+  }
+}
+
+.editor__button--disabled {
+  color: #283645;
+  border: 3px solid #283645;
+  opacity: 0.1;
+  margin-bottom: 0;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }

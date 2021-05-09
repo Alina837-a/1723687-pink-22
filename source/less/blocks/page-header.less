@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,21 @@
 }
 
 .page__toggle {
-@media (min-width: @desktop-width) {
-  display: none;
-}
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+  &:hover,
+  &:active {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
