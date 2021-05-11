@@ -1,6 +1,7 @@
 .filters {
   background-color: #f2f2f2;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-top: 127px;
 }
 
 .filters__wrapper {
@@ -19,6 +20,7 @@
 .filters__table {
   width: 840px;
   border-collapse: collapse;
+  margin-bottom: 45px;
   @media (min-width: @tablet-width) {
     width: 620px;
   }
@@ -69,6 +71,7 @@
 }
 
 .filters__tariff {
+  margin: 0;
   box-sizing: border-box;
   padding: 19px 116px 35px 117px;
   width: 280px;
@@ -80,6 +83,10 @@
     width: 233px;
     padding: 23px 66px 25px 67px;
   }
+}
+
+.filters__tariff p {
+  margin: 0;
 }
 
 .filters__hide {
@@ -103,10 +110,28 @@
 }
 
 .filters__toggles {
+  bottom: 7px;
 @media (min-width: @tablet-width) {
-  display: block;
+  display: none;
 }
 @media (min-width: @desktop-width) {
-  display: block;
+  display: none;
 }
+}
+
+.filters__toggle--current {
+  opacity: 1;
+}
+
+.filters__toggle--current::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: -2px;
+  left: 22px;
+  background-color: #FFFFFF;
+  border: 3px solid #283645;
+  border-radius: 50%;
 }
