@@ -1,47 +1,51 @@
 .page-header {
   position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
   z-index: 1;
 }
 
-.page-header__opened {
+.page-header--opened {
   background-color: #283645;
 }
 
-.page__top-menu {
+.page-header__wrapper {
   display: flex;
-  justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  width: 100%;
+  flex-direction: column;
+  padding-top: 20px;
+  @media (min-width: @desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+    margin: 0 auto;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 147px 620px;
+    column-gap: 172px;
+  }
 }
 
 .page-header__logo {
-@media (min-width: @desktop-width) {
-  display: none;
-}
+  display: block;
+  width: 74px;
+  height: 23px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  @media (min-width: @desktop-width) {
+    width: 145px;
+    height: 40px;
+    margin-bottom: 45px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 }
 
-.page__toggle {
-  position: absolute;
-  top: 21px;
-  right: 20px;
-  z-index: 2;
-  display: block;
-  width: 50px;
-  height: 24px;
-  background-color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  border: none;
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-  &:hover,
-  &:active {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+.page-header__logo:hover {
+  fill: #d22856;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
 }
