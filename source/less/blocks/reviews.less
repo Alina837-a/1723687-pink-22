@@ -6,8 +6,8 @@
   margin-bottom: 0;
 }
 @media (min-width: @desktop-width) {
-  padding-top: 58px;
-  padding-bottom: 0px;
+  padding-top: 193px;
+  padding-bottom: 0;
   margin-bottom: 41px;
 }
 }
@@ -16,11 +16,28 @@
   position: relative;
 }
 
+.reviews__item::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 79px;
+    height: 63px;
+    background-image: url(../img/quotes.svg);
+    top: -130px;
+    left: 50%;
+  }
+}
+
 .reviews__item {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  @media (min-width: @desktop-width) {
+    padding-left: 115px;
+  }
 }
 
 .reviews__author-name {
@@ -51,13 +68,14 @@
   padding: 0;
   margin: 0;
   width: 280px;
-  margin-bottom: 44px;
 @media (min-width: @tablet-width) {
   order: 1;
   font-size: 18px;
   margin-bottom: 51px;
+  width: 620px;
 }
 @media (min-width: @desktop-width) {
+  width: 100%;
   font-size: 18px;
   margin-bottom: 50px;
 }
@@ -96,23 +114,80 @@
 
 .slider__toggles {
   position: absolute;
+  bottom: -44px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
+  @media (min-width: @tablet-width) {
+    bottom: -51px;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__prev {
+  position: relative;
+  width: 22px;
+  height: 41px;
+  border: none;
+  background-color: white;
+}
+
+.reviews__next {
+  position: relative;
+  width: 22px;
+  height: 41px;
+  border: none;
+  background-color: white;
+}
+
+.reviews__prev::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/prev.svg);
+  width: 22px;
+  height: 41px;
+  top: -240px;
+  left: 0;
+}
+
+.reviews__next::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/next.svg);
+  width: 22px;
+  height: 41px;
+  top: -278px;
+  right: -920px;
 }
 
 .slider__toggle {
+  position: relative;
   display: block;
   padding: 0;
   width: 6px;
   height: 6px;
   margin-right: 19px;
-  border-radius: 50%;
-  background-color: #283645;
-  opacity: 0.3;
+  border: none;
 }
+
+.slider__toggle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+}
+
 
 .slider__toggle:hover {
   opacity: 0.6;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header  page-header--opened">
+    <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <svg width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,25 +47,6 @@
       </div>
     </header>
 
-    <script>
-      var mainNav = document.querySelector(".main-nav");
-      var mainNavToggle = document.querySelector(".main-nav__toogle");
-      var pageHeader  = document.querySelector(".page-header");
-      mainNav.classList.remove("main-nav--nojs"),
-      pageHeader.classList.remove("page-header--nojs"),
-      mainNavToggle.addEventListener("click", function() {
-        if (mainNav.classList.contains("main-nav--closed")) {
-          (mainNav.classList.remove("main-nav--closed"));
-          (mainNav.classList.add("main-nav--opened"));
-          (pageHeader.classList.add("page-header--opened"))
-        } else {
-          (mainNav.classList.add("main-nav--closed"));
-          (mainNav.classList.remove("main-nav--opened"));
-          (pageHeader.classList.remove("page-header--opened"))
-        }
-      });
-    </script>
-
     <main class="page-main">
       <h1 class="visually-hidden">Pink мобильное приложение</h1>
       <section class="download-app">
@@ -95,43 +76,43 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши предложения</h2>
-          <p class="advantages__change">
-            Устали от серости мегаполиса?
-          </p>
-          <p class="advantages__change advantages__change--grey">
-            Нам есть, что вам предложить!
-          </p>
-          <div class="advantages__wrapper">
-            <ul class="advantages__list container">
-              <li class="advantages__item advantages__title--mood">
-                <h3 class="advantages__title">
-                  Поднимает настроение
-                </h3>
-                <p class="advantages__description">
-                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-                </p>
-              </li>
-              <li class="advantages__item advantages__title--world">
-                <h3 class="advantages__title">
-                  Меняет мир вокруг
-                </h3>
-                <p class="advantages__description">
-                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-                </p>
-              </li>
-              <li class="advantages__item advantages__title--friends">
-                <h3 class="advantages__title">
-                  Заводит новых друзей
-                </h3>
-                <p class="advantages__description">
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-                </p>
-              </li>
-            </ul>
-          </div>
+        <p class="advantages__change">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="advantages__change advantages__change--grey">
+          Нам есть, что вам предложить!
+        </p>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list container">
+            <li class="advantages__item advantages__title--mood">
+              <h3 class="advantages__title">
+                Поднимает настроение
+              </h3>
+              <p class="advantages__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item advantages__title--world">
+              <h3 class="advantages__title">
+                Меняет мир вокруг
+              </h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item advantages__title--friends">
+              <h3 class="advantages__title">
+                Заводит новых друзей
+              </h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="research research__wrapper">
-        <div class="research__news container">
+      <section class="research">
+        <div class="research__news">
           <h2 class="visually-hidden">Эффективность использования нашего приложения доказали ученные</h2>
           <h3 class="research__effect">Эффект на 24 часа!</h3>
           <p class="research__scintists">
@@ -164,7 +145,7 @@
         <div class="filters__wrapper">
           <table class="filters__table">
             <tr  class="filters__price">
-              <td class="filters__hide">
+              <td class="filters__hide1">
               </td>
               <td class="filters__tariff">
                 <p>База</p>
@@ -183,15 +164,15 @@
               <td class="filters__hide">
                 Розовый фильтр
               </td>
-              <td>
+              <td class="available">
                 <span class="filters__pink">Розовый фильтр</span>
                 <span class="visually-hidden">Функция доступна</span>
               </td>
-              <td>
+              <td class="available">
                 <span class="filters__pink">Розовый фильтр</span>
                 <span class="visually-hidden">Функция доступна</span>
               </td>
-              <td>
+              <td class="available">
                 <span class="filters__pink">Розовый фильтр</span>
                 <span class="visually-hidden">Функция доступна</span>
               </td>
@@ -200,15 +181,15 @@
             <td class="filters__hide">
               Смайлики
             </td>
-            <td>
+            <td class="unavailable">
               <span class="filters__smile">Смайлики</span>
               <span class="visually-hidden">Функция недоступна</span>
             </td>
-            <td>
+            <td class="available">
               <span class="filters__smile">Смайлики</span>
               <span class="visually-hidden">Функция доступна</span>
             </td>
-            <td>
+            <td class="available">
               <span class="filters__smile">Смайлики</span>
               <span class="visually-hidden">Функция доступна</span>
             </td>
@@ -217,15 +198,15 @@
             <td class="filters__hide">
               Комментарии
             </td>
-            <td>
+            <td class="unavailable">
               <span class="filters__comment">Комментарии</span>
               <span class="visually-hidden">Функция недоступна</span>
             </td>
-            <td>
+            <td class="unavailable">
               <span class="filters__comment">Комментарии</span>
               <span class="visually-hidden">Функция недоступна</span>
             </td>
-            <td>
+            <td class="available">
               <span class="filters__comment">Комментарии</span>
               <span class="visually-hidden">Функция доступна</span>
             </td>
@@ -292,5 +273,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>
