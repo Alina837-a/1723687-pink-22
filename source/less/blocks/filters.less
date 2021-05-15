@@ -35,9 +35,25 @@
   }
 }
 
-.filters__table td {
+.filters__table tr:not(:nth-child(1)) {
   border: 2px solid #E5E5E5;
   border-radius: 1px 0px 0px 0px;
+}
+
+
+.filters__hide1 {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+    border: 0;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    height: 75px;
+    width: 153px;
+  }
+  @media (min-width: @desktop-width) {
+    height: 94px;
+  }
 }
 
 .filters__pink {
@@ -67,8 +83,6 @@
 
 
 .filters__price {
-  background: #283645;
-  border: 2px solid #283645;
   border-radius: 1px 0 0 0;
   color: #ffffff;
   text-align: center;
@@ -79,11 +93,19 @@
   box-sizing: border-box;
   padding: 19px;
   width: 280px;
+  background-color: #283645;
+  border: 2px solid #283645;
+  border-right: 2px solid #E5E5E5;
+  border-radius: 1px 0px 0px 0px;
   @media (min-width: @tablet-width) {
     width: 152px;
     padding: 19px 36px 16px 33px;
+    box-sizing: border-box;
+    height: 75px;
   }
   @media (min-width: @desktop-width) {
+    height: 94px;
+    box-sizing: border-box;
     width: 233px;
     padding: 23px 66px 25px 67px;
   }
@@ -109,10 +131,10 @@
   }
 }
 
-.filters__hide1 {
-  display: none;
+.filters__redactor td {
+  border-right: 2px solid #E5E5E5;
   @media (min-width: @tablet-width) {
-    display: block;
+    background-color: #ffffff;
   }
 }
 
@@ -172,15 +194,18 @@
   }
 }
 
+
 .filters__hide {
   display: none;
   box-sizing: border-box;
   @media (min-width: @tablet-width) {
     display: block;
     margin: 0;
+    width: 163px;
     background-color: #ffffff;
     font-size: 14px;
     line-height: 30px;
+    padding: 10px;
     height: 45px;
   }
   @media (min-width: @desktop-width) {

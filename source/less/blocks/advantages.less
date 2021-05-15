@@ -13,6 +13,7 @@
 @media (min-width: @desktop-width) {
   line-height: 54px;
   font-size: 40px;
+  width: 100%;
 }
 }
 
@@ -35,10 +36,8 @@
 }
 
 .advantages__list {
-  overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  padding-bottom: 324px;
   list-style: none;
 @media (min-width: @tablet-width) {
   padding-top: 112px;
@@ -49,7 +48,7 @@
   width: 940px;
   display: grid;
   margin: 0 auto;
-  padding-left: 0;
+  padding-left: 24px;
   padding-top: 307px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
@@ -65,6 +64,8 @@
   text-align: left;
 }
 @media (min-width: @desktop-width) {
+  margin-bottom: 0;
+  padding-top: 59px;
   width: 240px;
 }
 }
@@ -77,8 +78,8 @@
     background-image: url("../img/item1.png");
     background-repeat: no-repeat;
     width: 186px;
-    height: 382px;
-    left: 6px;
+    height: 302px;
+    left: 25px;
     top: -306px;
   }
 }
@@ -91,8 +92,8 @@
     background-image: url("../img/item2.png");
     background-repeat: no-repeat;
     width: 186px;
-    height: 382px;
-    left: 6px;
+    height: 302px;
+    left: 25px;
     top: -306px;
   }
 }
@@ -105,14 +106,21 @@
     background-image: url("../img/item3.png");
     background-repeat: no-repeat;
     width: 186px;
-    height: 382px;
-    left: 6px;
+    height: 302px;
+    left: 25px;
     top: -306px;
   }
 }
 
 .advantages__item:nth-last-of-type(1) {
   margin-bottom: 0;
+}
+
+.advantages__item:nth-last-of-type(1) {
+  padding-bottom: 324px;
+  @media (min-width: @tablet-width){
+    padding-bottom: 0;
+  }
 }
 
 .advantages__item:nth-last-of-type(1)::before {
@@ -122,9 +130,9 @@
   background-image: url("../img/iphone.png");
   background-repeat: no-repeat;
   width: 157px;
-  height: 320px;
+  height: 282px;
   left: 65px;
-  top: 175px;
+  bottom: 0;
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -138,9 +146,9 @@
     background-image: url("../img/iphone-tablet.png");
     background-repeat: no-repeat;
     width: 268px;
-    height: 547px;
+    height: 471px;
     top: 80px;
-    left: 0;
+    left: 20px;
   }
   @media (min-width: @desktop-width) {
     display: none;
@@ -158,9 +166,19 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 19px;
   }
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .advantages__description {
   margin: 0;
   font-size: 14px;
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

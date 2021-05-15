@@ -9,19 +9,39 @@
   background-position: 0 179px, top;
   background-color: #1d2631;
   @media (min-width: @tablet-width) {
-    background-image: url("../img/phonetablet.png"), url("../img/back-tablet.png");
-    background-repeat: no-repeat, no-repeat;
+    background-image: url("../img/back-tablet.png");
+    background-repeat: no-repeat;
     margin-top: -115px;
     padding-top: 169px;
-    padding-bottom: 119px;
-    background-position: 0 178px, top;
+    padding-bottom: 0;
+    background-position: top;
   }
   @media (min-width: @desktop-width) {
     padding-top: 224px;
-    padding-bottom: 113px;
-    background-image: url("../img/phonedesktop.png"), url("../img/back-desktop.png");
+    margin-top: -126px;
+    padding-bottom: 0;
+    margin-bottom: 77px;
+    background-image:  url("../img/back-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-position: 0 117px, top;
+  }
+}
+
+.download-app__wrapper {
+  @media (min-width: @tablet-width) {
+    background-image:   url("../img/phonetablet.png");
+    background-size: 660px ,540px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 119px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding-bottom: 130px;
+    background-image: url("../img/phonedesktop.png");
+    background-size: 1050px ,645px;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
@@ -55,7 +75,6 @@
   font-size: 18px;
   line-height: 18px;
   border: 3px solid #ffffff;
-  background-color: #1d2631;
   margin: 0;
   padding: 18px 38px;
   width: 280px;
@@ -104,9 +123,6 @@
   }
 }
 
-.download-app__list:nth-of-type(3) {
-  margin-right: 0;
-}
 
 .download-app__intro {
   margin: 0;
@@ -118,9 +134,54 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     font-size: 18px;
-
     width: 308px;
     margin: 0;
     padding: 0;
   }
 }
+
+.download-app__item {
+  position: relative;
+  margin-right: 35px;
+}
+
+.download-app__item:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.download-app__app-store::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/apple-logo.svg);
+  background-repeat: no-repeat;
+  top: -38px;
+  left: 0;
+  width: 47px;
+  height: 56px;
+}
+
+.download-app__google-play::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/android-logo.svg);
+  background-repeat: no-repeat;
+  top: -30px;
+  left: 40px;
+  width: 43px;
+  height: 47px;
+}
+
+.download-app__microsoft::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/microsoft-logo.svg);
+  background-repeat: no-repeat;
+  top: -28px;
+  left: 80px;
+  width: 44px;
+  height: 41px;
+}
+
