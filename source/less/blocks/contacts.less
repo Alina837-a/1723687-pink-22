@@ -1,6 +1,7 @@
 .contacts__questions {
   margin: 0;
   padding: 0;
+  padding-top: 50px;
   text-align: center;
   line-height: 29px;
   font-weight: 300;
@@ -67,7 +68,7 @@
 
 .contacts__item--phone {
 @media (min-width: @tablet-width) {
-  padding-left: 63px;
+  padding-left: 23px;
   margin-right: 97px;
 }
 @media (min-width: @desktop-width) {
@@ -80,7 +81,7 @@
 .contacts__item--address {
 @media (min-width: @tablet-width) {
   order: 3;
-  padding-left: 225px;
+  padding-left: 174px;
   width: 219px;
 }
 @media (min-width: @desktop-width) {
@@ -115,4 +116,15 @@
   font-weight: 300;
   margin: 0;
   padding: 0;
+}
+
+.contacts__item--email a:hover {
+  color: #283645;
+  text-decoration-line: underline;
+}
+
+.contacts__item--email a:active{
+  color: #283645;
+  text-decoration-line: none;
+  opacity: 0.3;
 }
