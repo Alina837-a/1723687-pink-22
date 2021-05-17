@@ -9,6 +9,13 @@
   background-color: #283645;
 }
 
+.page-header--nojs {
+  background-color: #283645;
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
@@ -23,15 +30,24 @@
   }
 }
 
+.page-header__menu-burger {
+  position: relative;
+  padding-top: 20px;
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
+}
+
 .page-header__logo {
   display: block;
   width: 74px;
   height: 23px;
   margin-bottom: 20px;
-  padding-top: 20px;
   padding-bottom: 3px;
   @media (min-width: @tablet-width) {
-    padding-top: 27px;
     width: 145px;
     height: 40px;
     margin-bottom: 40px;
@@ -39,7 +55,6 @@
   @media (min-width: @desktop-width) {
     width: 147px;
     margin-bottom: 0;
-    padding-top: 0;
   }
 }
 
@@ -50,4 +65,78 @@
 .page-header__logo:active path{
   fill: #ffffff;
   opacity: 0.3;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__menu-burger--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 9px 0 0 #ffffff, 0 17px 0 0 #ffffff;
+}
+
+.page-header__menu-burger--closed .page-header__toggle:hover::before {
+  background-color: #D22856;
+  box-shadow:
+    0 9px 0 0 #D22856, 0 17px 0 0 #D22856;
+}
+
+.page-header__menu-burger--closed .page-header__toggle:active::before {
+  background-color: fade(#D22856, 30%);
+  box-shadow:
+    0 9px 0 0 fade(#D22856, 30%), 0 17px 0 0 fade(#D22856, 30%);
+}
+
+.page-header__menu-burger--opened .page-header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: (#D22856);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#D22856, 30%);
+  }
+}
+
+.page-header__menu-burger--nojs .page-header__toggle {
+  display: none;
 }

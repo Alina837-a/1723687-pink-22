@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
-        <div class="container">
+        <div class="container page-header__menu-burger page-header__menu-burger--nojs  page-header__menu-burger--closed">
           <a class="page-header__logo">
             <svg width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z" fill="white"/>
@@ -18,7 +18,7 @@
               <path d="M55.9384 1.38904C55.9228 1.21262 55.944 1.03487 56.0005 0.867114C56.0571 0.699353 56.1479 0.545245 56.267 0.414596C56.3862 0.283947 56.5311 0.179616 56.6926 0.108238C56.8541 0.0368607 57.0286 0 57.2051 0C57.3815 0 57.5561 0.0368607 57.7176 0.108238C57.8791 0.179616 58.024 0.283947 58.1431 0.414596C58.2623 0.545245 58.353 0.699353 58.4096 0.867114C58.4662 1.03487 58.4874 1.21262 58.4718 1.38904V13.6837L71.2282 0.551443C71.4899 0.279712 71.8455 0.119105 72.2216 0.10273C72.5468 0.115453 72.8548 0.252812 73.0821 0.486531C73.3094 0.72025 73.4388 1.03254 73.4436 1.35912C73.4366 1.52896 73.3961 1.69572 73.3245 1.84975C73.2529 2.00379 73.1516 2.14205 73.0264 2.25655L65.0785 10.1539L73.6523 20.6836C73.8764 20.9441 73.9998 21.2768 74 21.6209C73.9961 21.7933 73.9583 21.9633 73.8887 22.121C73.8191 22.2786 73.719 22.4209 73.5943 22.5395C73.4696 22.6582 73.3228 22.7509 73.1622 22.8123C73.0016 22.8737 72.8305 22.9026 72.6588 22.8973C72.4588 22.8891 72.2639 22.8322 72.0908 22.7314C71.9177 22.6306 71.7716 22.4891 71.6653 22.3189L63.3001 11.859L58.4718 16.7051V21.591C58.4718 21.7573 58.4391 21.922 58.3757 22.0756C58.3123 22.2293 58.2194 22.3689 58.1022 22.4865C57.9851 22.6041 57.846 22.6973 57.6929 22.761C57.5398 22.8246 57.3757 22.8574 57.21 22.8574C57.0443 22.8574 56.8803 22.8246 56.7272 22.761C56.5741 22.6973 56.435 22.6041 56.3179 22.4865C56.2007 22.3689 56.1078 22.2293 56.0443 22.0756C55.9809 21.922 55.9483 21.7573 55.9483 21.591V1.38904H55.9384Z" fill="white"/>
             </svg>
           </a>
-          <button class="main-nav__toggle" type="button">
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -57,18 +57,18 @@
           <p class="download-app__slogan">
             Взгляните на жизнь иначе!
           </p>
-          <a class="download-app__button-app" href="https://www.apple.com/ru/app-store/">
+          <a class="download-app__link download-app__button-app" href="https://www.apple.com/ru/app-store/">
             Скачать приложение
           </a>
           <ul class="download-app__list">
             <li class="download-app__item">
-              <a class="download-app__app-store" href="https://www.apple.com/ru/app-store/" aria-label="app-store"></a>
+              <a class="download-app__link download-app__app-store" href="https://www.apple.com/ru/app-store/" aria-label="app-store"></a>
             </li>
             <li class="download-app__item">
-              <a class="download-app__google-play" href="https://play.google.com/store/apps;hl=ru?hl=ru&gl=US" aria-label="google play"></a>
+              <a class="download-app__link download-app__google-play" href="https://play.google.com/store/apps;hl=ru?hl=ru&gl=US" aria-label="google play"></a>
             </li>
             <li class="download-app__item">
-              <a class="download-app__microsoft" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="microsoft"></a>
+              <a class="download-app__link download-app__microsoft" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="microsoft"></a>
             </li>
           </ul>
           <p class="download-app__intro">
