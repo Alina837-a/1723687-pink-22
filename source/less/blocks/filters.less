@@ -14,9 +14,10 @@
 
 .filters__wrapper {
   position: relative;
-  width: 320px;
+  max-width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  padding: 0 20px;
   @media (min-width: @tablet-width) {
     width: 620px;
   }
@@ -29,14 +30,16 @@
   width: 840px;
   border-collapse: collapse;
   margin-bottom: 45px;
+  transform: translateX(-275px);
   @media (min-width: @tablet-width) {
     width: 620px;
     margin-bottom: 0;
+    transform: translateX(0);
   }
 }
 
 .filters__table tr:not(:nth-child(1)) {
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px 0px 0px 0px;
 }
 
@@ -94,7 +97,6 @@
   padding: 19px;
   width: 280px;
   background-color: #283645;
-  border: 2px solid #283645;
   border-right: 2px solid #E5E5E5;
   border-radius: 1px 0px 0px 0px;
   @media (min-width: @tablet-width) {
@@ -244,4 +246,38 @@
   background-color: #FFFFFF;
   border: 3px solid #283645;
   border-radius: 50%;
+}
+
+.filters__tariff--hit {
+  position: relative;
+}
+
+.filters__tariff--hit::before {
+  content: '';
+  position: absolute;
+  top: -37px;
+  left: -47px;
+  width: 45px;
+  height: 30px;
+  transform: rotate(-45deg);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 27px;
+  border-color: transparent transparent #d22856;
+  @media (min-width: @tablet-width) {
+    left: -44px;;
+  }
+}
+
+.filters__tariff--hit::after {
+  content: "хит";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
 }
