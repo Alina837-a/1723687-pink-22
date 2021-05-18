@@ -11,19 +11,19 @@
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.png");
     background-repeat: no-repeat;
-    margin-top: -115px;
+    margin-top: -129px;
     padding-top: 169px;
     padding-bottom: 0;
     background-position: top;
   }
   @media (min-width: @desktop-width) {
     padding-top: 224px;
-    margin-top: -126px;
+    margin-top: -145px;
     padding-bottom: 0;
     margin-bottom: 77px;
     background-image:  url("../img/back-desktop.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 0 117px, top;
+    background-repeat: no-repeat;
+    background-position: top;
   }
 }
 
@@ -110,16 +110,20 @@
 
 
 .download-app__list {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin-bottom: 31px;
-  margin-right: 35px;
+  padding-left: 37px;
   @media (min-width: @tablet-width) {
     margin-bottom: 51px;
+    padding-left: 66px;
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 59px;
+    padding-left: 47px;
   }
 }
 
@@ -141,12 +145,31 @@
 }
 
 .download-app__item {
-  position: relative;
   margin-right: 35px;
 }
 
-.download-app__item:nth-of-type(3) {
+.download-app__item:nth-last-child(1) {
   margin-right: 0;
+}
+
+.download-app__link {
+  display: block;
+  position: relative;
+}
+
+.download-app__app-store {
+  width: 47px;
+  height: 56px;
+}
+
+.download-app__google-play {
+  width: 43px;
+  height: 47px;
+}
+
+.download-app__microsoft {
+  width: 44px;
+  height: 41px;
 }
 
 .download-app__app-store::before{
@@ -155,7 +178,7 @@
   display: block;
   background-image: url(../img/apple-logo.svg);
   background-repeat: no-repeat;
-  top: -38px;
+  top: -9px;
   left: 0;
   width: 47px;
   height: 56px;
@@ -167,8 +190,8 @@
   display: block;
   background-image: url(../img/android-logo.svg);
   background-repeat: no-repeat;
-  top: -30px;
-  left: 40px;
+  top: 0;
+  left: 0x;
   width: 43px;
   height: 47px;
 }
@@ -179,8 +202,8 @@
   display: block;
   background-image: url(../img/microsoft-logo.svg);
   background-repeat: no-repeat;
-  top: -28px;
-  left: 80px;
+  top: 0;
+  left: 0;
   width: 44px;
   height: 41px;
 }
