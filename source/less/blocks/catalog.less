@@ -104,27 +104,53 @@
   }
 }
 
-.catalog__item:nth-last-of-type(1) {
-  margin-bottom: 0;
-}
-
-.catalog__item:nth-last-of-type(2) {
-  margin-bottom: 0;
-}
-
 .catalog__card {
   background-color: #f2f2f2;
-  padding-top: 25px;
-  padding-bottom: 26px;
+  padding: 20px 12px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    height: 155px;
+  }
+}
+
+.catalog__card--panorama {
+  width: 280px;
+  padding: 20px 12px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 620px;
+    min-height: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.catalog__wrap {
+  display: flex;
+}
+
+
+.catalog__wrap--button {
+  margin-top: auto;
+}
+
+.catalog__button--panorama {
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .catalog__title {
-  font-weight: 300;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 14px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
   margin-right: 3px;
 }
 
@@ -138,18 +164,32 @@
 .catalog__comment {
   font-size: 14px;
   margin: 0;
-  margin-bottom: 23px;
-  width: 280px;
+  margin-bottom: 10px;
   @media (min-width: @tablet-width) {
     width: 100%;
   }
 }
 
 .catalog__button {
+  position: relative;
   margin-right: 18px;
+  border: none;
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-left: auto;
+  }
+}
+
+.catalog__button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/heart.svg);
   width: 13px;
   height: 12px;
-  padding: 0;
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 0;
 }
 
 .catalog__like {
@@ -157,6 +197,12 @@
   line-height: 24px;
   color: #d22856;
   margin: 0;
+  margin-left: 18px;
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    order: 1;
+    justify-content: start;
+  }
 }
 
 .catalog__title--panorama {
@@ -176,6 +222,7 @@
   @media (min-width: @tablet-width) {
     order: 5;
     width: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -190,4 +237,3 @@
     order: 4;
   }
 }
-
