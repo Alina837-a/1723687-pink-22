@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   @media (min-width: @desktop-width) {
-    padding-top: 40px;
+    padding-top: 27px;
     padding-bottom: 43px;
     margin: 0 auto;
     width: 940px;
@@ -59,6 +59,28 @@
   }
 }
 
+.logotype-header-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logotype-header-tablet {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logotype-header-desktop {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
 .page-header__logo:hover path {
   fill: #d22856;
 }
@@ -93,6 +115,9 @@
   height: 3px;
   background-color: #ffffff;
   box-shadow: 0 9px 0 0 #ffffff, 0 17px 0 0 #ffffff;
+  @media (min-width: @tablet-width) {
+    top: 26px;
+  }
 }
 
 .page-header__menu-burger--closed .page-header__toggle:hover::before {

@@ -89,23 +89,81 @@
 .editor__buttons {
   padding: 0;
   font-size: 0;
+  display: block;
   width: 48px;
   height: 48px;
   border: none;
   cursor: pointer;
-  background: 0 0;
+  background-color: transparent;
   outline: none;
+  fill: #283645;
+  opacity: 0.3;
+  @media (min-width: @tablet-width) {
+    fill: #D22856;
+    opacity: 1;
+  }
+}
+
+.editor__buttons svg {
+  @media (min-width: @tablet-width) {
+  width: 25px;
+  height: 25px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.editor__buttons--active {
+  fill: #D22856;
+  opacity: 1;
+}
+
+.editor__buttons:active svg{
+  fill: #D22856;
+  opacity: 1;
+}
+
+.editor__buttons:hover svg{
+  fill: #283645;
+  opacity: 0.5;
+}
+
+.editor__buttons:focus svg{
+  fill: #D22856;
+  opacity: 1;
 }
 
 .editor__range {
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
+    position: absolute;
+    bottom: 0;
+    top: 29px;
+    left: 70px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 21px;
   }
 }
 
 .editor__range--active {
   display: block;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 29px;
+    left: 70px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 21px;
+  }
 }
 
 input[type="range"] {
@@ -114,19 +172,12 @@ input[type="range"] {
   -moz-apperance: none;
   height: 2px;
   width: 240px;
-  bottom: -20px;
-  left: -20px;
   background-color: #283645;
   @media (min-width: @tablet-width) {
     width: 202px;
-    bottom: auto;
-    left: auto;
-    top: 29px;
-    right: 0;
   }
   @media (min-width: @desktop-width) {
     width: 288px;
-    right: 21px;
   }
 }
 
@@ -189,4 +240,20 @@ input[type='range']::-webkit-slider-thumb {
     margin-bottom: 0;
     margin-right: 0;
   }
+}
+
+.editor__photo--wrap {
+  position: relative;
+  display: block;
+}
+
+.editor__input {
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  top: 0;
+  left: 0;
 }
