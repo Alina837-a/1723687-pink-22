@@ -23,6 +23,12 @@
   }
 }
 
+.main-nav {
+  @media (min-width: @desktop-width) {
+    padding-top: 16px;
+  }
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -66,4 +72,23 @@
 .main-nav__item a[href]:active{
     color: #D22856;
     opacity: 0.3;
+}
+
+
+.main-nav__item--current {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.main-nav__item--current::after {
+  @media (min-width: @desktop-width) {
+  position: absolute;
+  content: "";
+  height: 2px;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  }
 }
