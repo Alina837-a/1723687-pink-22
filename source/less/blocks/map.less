@@ -1,5 +1,14 @@
 .map {
-  padding-bottom: 5px;
+  background-color: #e5e5e5;
+  clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+  height: 200px;
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
 
 .map img {
