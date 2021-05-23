@@ -28,6 +28,10 @@
     grid-template-columns: 147px 620px;
     column-gap: 172px;
   }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 168px;
+  }
 }
 
 .page-header__menu-burger {
@@ -40,6 +44,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 0;
     padding-top: 0;
     width: 147px;
   }
@@ -99,7 +104,7 @@
   opacity: 0.3;
 }
 
-.page-header__logo:focus-visible  {
+.page-header__logo:focus {
   fill: #ffffff;
   opacity: 0.3;
   outline: none;
@@ -124,6 +129,7 @@
 .page-header__menu-burger--closed .page-header__toggle::before {
   content: "";
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 50px;
@@ -153,6 +159,7 @@
   &::after {
     content: "";
     position: absolute;
+    display: block;
     top: 11px;
     left: 20px;
     width: 25px;

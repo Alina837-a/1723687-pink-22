@@ -1,6 +1,6 @@
 .map {
   background-color: #e5e5e5;
-  clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+  position: relative;
   height: 200px;
   @media (min-width: @tablet-width) {
     height: 374px;
@@ -11,6 +11,18 @@
   }
 }
 
-.map img {
+.map img,
+.map iframe {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }

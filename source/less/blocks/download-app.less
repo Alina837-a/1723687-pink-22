@@ -1,14 +1,14 @@
 .download-app {
   background-image: url("../img/phone-mobile.png"), url("../img/back-mobile.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0px 176px, top;
-  background-size: 320px 286px, contain;
+  background-repeat:  no-repeat;
+  background-position: top;
+  background-size: 100% 461px;
   margin-bottom: 40px;
   padding-bottom: 31px;
   background-color: #1d2631;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/phone-mobile@2x.png"), url("../img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile@2x.jpg");
   }
 
 
@@ -17,24 +17,25 @@
     background-repeat: no-repeat;
     padding-bottom: 0;
     background-position: top;
-    background-size: auto;
+    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 100%;
     }
   }
 
   @media (min-width: @desktop-width) {
-
-
     padding-bottom: 0;
     margin-bottom: 77px;
     background-image:  url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/back-desktop@2x.jpg);
+      background-size: 100%;
     }
   }
 }
@@ -43,6 +44,11 @@
 .download-app__wrapper {
   padding-top: 90px;
   margin-top: -65px;
+  background-image: url("../img/phone-mobile.png");
+  background-position: 0px 176px;
+  background-repeat:  no-repeat;
+  background-size: 320px 286px;
+  background-image: url("../img/phone-mobile@2x.png");
   @media (min-width: @tablet-width) {
     margin-top: -110px;
     padding-top: 169px;
@@ -144,16 +150,17 @@
 
 .download-app__list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  width: 204px;
+  align-items: center;
   margin-bottom: 13px;
-  padding-left: 40px;
-
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-bottom: 51px;
-    padding-left: 66px;
+    padding-left: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -194,8 +201,8 @@
 }
 
 .download-app__app-store {
-  width: 47px;
-  height: 56px;
+  width: 46px;
+  height: 63px;
 }
 
 .download-app__google-play {
@@ -214,10 +221,10 @@
   display: block;
   background-image: url(../img/apple-logo.svg);
   background-repeat: no-repeat;
-  top: -9px;
+  top: 0;
   left: 0;
-  width: 47px;
-  height: 56px;
+  width: 46px;
+  height: 63px;
 }
 
 .download-app__google-play::before{
