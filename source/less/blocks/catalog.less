@@ -144,16 +144,15 @@
 .catalog__wrap {
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 
 .catalog__wrap--button {
   margin-top: auto;
-  padding-left: 31px;
 }
 
 .catalog__button--panorama {
-  padding-left: 31px;
   @media (min-width: @tablet-width) {
     margin-left: auto;
   }
@@ -184,8 +183,6 @@
 }
 
 .catalog__button {
-  position: absolute;
-  content: "";
   display: block;
   margin-right: 18px;
   border: none;
@@ -193,8 +190,6 @@
   background-repeat: no-repeat;
   width: 13px;
   height: 12px;
-  top: 5px;
-  left: 0;
   background-color: transparent;
   @media (min-width: @tablet-width) {
     order: 2;
@@ -242,6 +237,6 @@
 
 .catalog__like--panorama {
   @media (min-width: @tablet-width) {
-    order: 4;
+    order: 1;
   }
 }

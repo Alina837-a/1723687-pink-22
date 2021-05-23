@@ -1,48 +1,82 @@
 .download-app {
-  margin-top: -92px;
-  padding-top: 95px;
-  padding-bottom: 38px;
-  margin-bottom: 46px;
-  background-size: 100%;
-  background-image: url("../img/phone.png"), url("../img/back-mobile.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 179px, top;
+  background-image: url("../img/phone-mobile.png"), url("../img/back-mobile.jpg");
+  background-repeat:  no-repeat;
+  background-position: top;
+  background-size: 100% 461px;
+  margin-bottom: 40px;
+  padding-bottom: 31px;
   background-color: #1d2631;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+
   @media (min-width: @tablet-width) {
-    background-image: url("../img/back-tablet.png");
+    background-image: url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
-    margin-top: -129px;
-    padding-top: 169px;
     padding-bottom: 0;
     background-position: top;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 100%;
+    }
   }
+
   @media (min-width: @desktop-width) {
-    padding-top: 0;
-    margin-top: -145px;
     padding-bottom: 0;
     margin-bottom: 77px;
-    background-image:  url("../img/back-desktop.png");
+    background-image:  url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/back-desktop@2x.jpg);
+      background-size: 100%;
+    }
   }
 }
 
+
 .download-app__wrapper {
+  padding-top: 90px;
+  margin-top: -65px;
+  background-image: url("../img/phone-mobile.png");
+  background-position: 0px 176px;
+  background-repeat:  no-repeat;
+  background-size: 320px 286px;
+  background-image: url("../img/phone-mobile@2x.png");
   @media (min-width: @tablet-width) {
-    background-image:   url("../img/phonetablet.png");
+    margin-top: -110px;
+    padding-top: 169px;
+    background-image:   url("../img/phone-tablet.png");
     background-size: 660px ,540px;
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 119px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/phone-tablet@2x.png);
+    }
   }
+
   @media (min-width: @desktop-width) {
+    padding-top: 0;
+    margin-top: -145px;
     width: 940px;
     padding-top: 224px;
     padding-bottom: 83px;
-    background-image: url("../img/phonedesktop.png");
+    background-image: url("../img/phone-desktop.png");
     background-size: 1050px ,645px;
     background-repeat: no-repeat;
     background-position: bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/phone-desktop@2x.png);
+    }
   }
 }
 
@@ -52,14 +86,16 @@
   color: #ffffff;
   font-weight: 300;
   margin: 0;
-  padding: 0;
-  margin-bottom: 348px;
+  width: 280px;
+  margin-bottom: 340px;
+
   @media (min-width: @tablet-width) {
     width: 245px;
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 39px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
@@ -84,12 +120,14 @@
   border-radius: 29px;
   text-decoration: none;
   font-weight: 700;
+
   @media (min-width: @tablet-width) {
     background-color: transparent;
     margin-bottom: 46px;
     padding: 21px 49px;
     width: 300px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
     line-height: 18px;
@@ -112,16 +150,19 @@
 
 .download-app__list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 31px;
-  padding-left: 37px;
+  width: 204px;
+  align-items: center;
+  margin-bottom: 13px;
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-bottom: 51px;
-    padding-left: 66px;
+    padding-left: 48px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 59px;
     padding-left: 47px;
@@ -136,6 +177,7 @@
   font-weight: 300;
   font-size: 14px;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     text-align: left;
     font-size: 18px;
@@ -159,8 +201,8 @@
 }
 
 .download-app__app-store {
-  width: 47px;
-  height: 56px;
+  width: 46px;
+  height: 63px;
 }
 
 .download-app__google-play {
@@ -179,10 +221,10 @@
   display: block;
   background-image: url(../img/apple-logo.svg);
   background-repeat: no-repeat;
-  top: -9px;
+  top: 0;
   left: 0;
-  width: 47px;
-  height: 56px;
+  width: 46px;
+  height: 63px;
 }
 
 .download-app__google-play::before{

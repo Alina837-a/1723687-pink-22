@@ -1,7 +1,28 @@
 .map {
-  padding-bottom: 5px;
+  background-color: #e5e5e5;
+  position: relative;
+  height: 200px;
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
 
-.map img {
+.map img,
+.map iframe {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
