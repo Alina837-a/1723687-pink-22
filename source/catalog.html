@@ -58,13 +58,13 @@
         <div class="container page-header__menu-burger page-header__menu-burger--nojs  page-header__menu-burger--closed">
           <a class="page-header__logo" href="./index.html" aria-label="Логотип мобильного приложения Pink">
             <svg class="logotype-header-mobile" width="74" height="23">
-              <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#logotype-header-mobile"></use>
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#logotype-header-mobile"/>
             </svg>
             <svg class="logotype-header-tablet" width="145" height="40">
-              <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#logotype-header-tablet"></use>
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#logotype-header-tablet"/>
             </svg>
             <svg class="logotype-header-desktop" width="145" height="40">
-              <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#logotype-header-desktop"></use>
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#logotype-header-desktop"/>
             </svg>
           </a>
           <button class="page-header__toggle" type="button">
@@ -111,15 +111,15 @@
           </div>
           <picture class="catalog__photo--panorama">
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop2x.jpg 2x">
-            <source media="(min-width: 660px" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet.jpg 2x">
             <img class="catalog__photo--panorama" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile2x.jpg 2x" alt="Панорама с высоты">
           </picture>
           <div class="catalog__card catalog__card--panorama">
             <div class="catalog__wrap catalog__wrap--panorama">
               <p class="catalog__title catalog__title--panorama">Анна</p>
-              <time class="catalog__time catalog__time--panorama">(5 минут назад)</time>
+              <span class="catalog__time catalog__time--panorama">(5 минут назад)</span>
             </div>
-            <p class="catalog__comment catalog__comment--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="catalog__comment catalog__comment--panorama">Прыгать или нет? Напишите в комментарии свой совет и <br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="catalog__wrap catalog__button--panorama">
               <button class="catalog__button catalog__button--panorama" type="button" aria-label="Поставить лайк"></button>
               <p class="catalog__like catalog__like--panorama">Нравится: 215</p>
@@ -130,13 +130,13 @@
           <li class="catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="машина">
             </picture>
             <div class="catalog__card">
               <div class="catalog__wrap">
                 <p class="catalog__title">Левон</p>
-                <time class="catalog__time">(5 часов назад)</time>
+                <span class="catalog__time">(5 часов назад)</span>
               </div>
               <p class="catalog__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="catalog__wrap catalog__wrap--button">
@@ -148,13 +148,13 @@
           <li class="catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="барабан">
             </picture>
             <div class="catalog__card">
               <div class="catalog__wrap">
                 <p class="catalog__title">Антон</p>
-                <time class="catalog__time">(12 часов назад)</time>
+                <span class="catalog__time">(12 часов назад)</span>
               </div>
               <p class="catalog__comment">Соседи будут рады!</p>
               <div class="catalog__wrap catalog__wrap--button">
@@ -166,13 +166,13 @@
           <li class="catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="окна">
             </picture>
             <div class="catalog__card">
               <div class="catalog__wrap">
                 <p class="catalog__title">Борис</p>
-                <time class="catalog__time">(20 часов назад)</time>
+                <span class="catalog__time">(20 часов назад)</span>
               </div>
               <p class="catalog__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="catalog__wrap catalog__wrap--button">
@@ -184,13 +184,13 @@
           <li class="catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="ярмарка">
             </picture>
             <div class="catalog__card">
               <div class="catalog__wrap">
                 <p class="catalog__title">Сергей</p>
-                <time class="catalog__time">(25 часов назад)</time>
+                <span class="catalog__time">(25 часов назад)</span>
               </div>
               <p class="catalog__comment">Самая кубанская в мире!</p>
               <div class="catalog__wrap catalog__wrap--button">
@@ -202,13 +202,13 @@
           <li class="catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="горы">
             </picture>
             <div class="catalog__card">
               <div class="catalog__wrap">
                 <p class="catalog__title">Максим</p>
-                <time class="catalog__time">(40 часов назад)</time>
+                <span class="catalog__time">(40 часов назад)</span>
               </div>
               <p class="catalog__comment">Где снег-то?</p>
               <div class="catalog__wrap catalog__wrap--button">
@@ -220,13 +220,13 @@
           <li class="catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="самолет">
             </picture>
             <div class="catalog__card">
               <div class="catalog__wrap">
                 <p class="catalog__title">Надежда</p>
-                <time class="catalog__time">(45 часов назад)</time>
+                <span class="catalog__time">(45 часов назад)</span>
               </div>
               <p class="catalog__comment">Всем GM и взаимные лайки!</p>
               <div class="catalog__wrap catalog__wrap--button">
@@ -238,17 +238,17 @@
         </ul>
       </section>
       <section class="editor">
-        <section class="editor__filters container">
-          <h2 class="visually-hidden">Фильтры</h2>
+        <h2 class="visually-hidden">Фильтры</h2>
+        <div class="editor__filters container">
           <p class="editor__subsection">Затмите их всех!</p>
           <p class="editor__subsection">Выкладывайте  все,что накопилось в телефоне!</p>
-        </section>
+        </div>
         <form class="editor__correction" method="GET" action="https://echo.htmlacademy.ru">
           <div class="editor__wrap container">
             <div class="editor__photo--wrap">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
                 <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="зимний лес">
               </picture>
               <label class="visually-hidden" for="photo">Загрузите фотографию</label>
@@ -259,34 +259,34 @@
                 <div class="editor__item editor__item--crop editor__item--active">
                   <button class="editor__buttons editor__buttons--active" type="button">
                     <svg class="crop" width="44" height="44">
-                      <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#crop"></use>
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#crop"/>
                     </svg>
                   </button>
                   <div class="editor__range  editor__range--active">
-                    <input  type="range" id="crop" min="0" max="100" name="crop">
-                    <label class="visually-hidden" for="crop">Обрезать</label>
+                    <input  type="range" id="crop-crop" min="0" max="100" name="crop" value="85">
+                    <label class="visually-hidden" for="crop-crop">Обрезать</label>
                   </div>
                 </div>
                 <div class="editor__item editor__item--fill">
                   <button class="editor__buttons" type="button">
                     <svg class="fill" width="44" height="44">
-                      <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#fill"></use>
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#fill"/>
                     </svg>
                   </button>
                   <div class="editor__range">
-                    <input  type="range" id="fill" min="0" max="100" name="fill">
-                    <label class="visually-hidden" for="fill">Заливка</label>
+                    <input  type="range" id="fill-fill" min="0" max="100" name="fill">
+                    <label class="visually-hidden" for="fill-fill">Заливка</label>
                   </div>
                 </div>
                 <div class="editor__item editor__item--contrast">
                   <button class="editor__buttons" type="button">
                     <svg class="contrast" width="32" height="32">
-                      <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#contrast"></use>
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#contrast"/>
                     </svg>
                   </button>
                   <div class="editor__range">
-                    <input type="range" id="contrast" min="0" max="100" name="contrast">
-                    <label class="visually-hidden" for="contrast">Контрастность</label>
+                    <input type="range" id="contrast-contrast" min="0" max="100" name="contrast">
+                    <label class="visually-hidden" for="contrast-contrast">Контрастность</label>
                   </div>
                 </div>
               </div>

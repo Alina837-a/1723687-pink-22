@@ -1,28 +1,47 @@
 .filters {
   background-color: #f2f2f2;
   padding-bottom: 35px;
-  padding-top: 102px;
-  clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
   @media (min-width: @tablet-width) {
-    padding-top: 112px;
-    padding-bottom: 70px;
+    padding-bottom: 67px;
   }
   @media (min-width: @desktop-width) {
-    padding-top: 161px;
-    padding-bottom: 98px;
+    padding-bottom: 94px;
+  }
+}
+
+.filters::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 30px;
+  top: -30px;
+  left: 0;
+  background-image: linear-gradient(to bottom right, transparent 50%, #f2f2f2 50%);
+  @media (min-width: @tablet-width) {
+    height: 50px;
+    top: -50px;
+  }
+  @media (min-width: @desktop-width) {
+    height: 95px;
+    top: -95px;
   }
 }
 
 .filters__wrapper {
+  padding: 0 20px;
+  padding-top: 81px;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   margin: 0 auto;
-  padding: 0 20px;
   @media (min-width: @tablet-width) {
+    padding-top: 47px;
     width: 620px;
   }
   @media (min-width: @desktop-width) {
+    padding-top: 60px;
     width: 940px;
   }
 }
@@ -102,7 +121,7 @@
   border-radius: 1px 0px 0px 0px;
   @media (min-width: @tablet-width) {
     width: 152px;
-    padding: 19px 36px 16px 33px;
+    padding: 10px;
     box-sizing: border-box;
     height: 75px;
   }
@@ -110,7 +129,7 @@
     height: 94px;
     box-sizing: border-box;
     width: 233px;
-    padding: 23px 66px 25px 67px;
+    padding: 16px 66px 23px 67px;
   }
 }
 
@@ -119,12 +138,14 @@
 }
 
 .filters__tariff p:nth-of-type(1) {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
 }
 
 .filters__tariff p:nth-of-type(2) {
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
@@ -206,6 +227,7 @@
     font-size: 14px;
     line-height: 30px;
     padding: 10px;
+    padding-left: 16px;
     height: 45px;
   }
   @media (min-width: @desktop-width) {
@@ -248,6 +270,7 @@
 
 .filters__tariff--hit {
   position: relative;
+  overflow: hidden;
 }
 
 .filters__tariff--hit::before {
@@ -263,7 +286,9 @@
   border-width: 27px;
   border-color: transparent transparent #d22856;
   @media (min-width: @tablet-width) {
-    left: -44px;;
+    left: -44px;
+    top: -47px;
+    height: 30px;
   }
 }
 
@@ -275,7 +300,9 @@
   text-transform: uppercase;
   transform: rotate(-45deg);
   font-size: 14px;
-  font-weight: 700;
   line-height: 30px;
   color: rgb(255, 255, 255);
+  @media (min-width: @tablet-width) {
+    top: 3px;
+  }
 }
