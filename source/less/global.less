@@ -4,7 +4,9 @@ img {
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type=checkbox].visually-hidden, input[type=radio].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+.input[type=checkbox].visually-hidden,
+.input[type=radio].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -16,29 +18,19 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 .container {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
   width: 320px;
+
   @media (min-width: @tablet-width) {
     width: 660px;
   }
+  
   @media (min-width: @desktop-width) {
     width: 960px;
-  }
-}
-
-.subtitle {
-  margin: 0 auto;
-  margin-bottom: 55px;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  box-sizing: border-box;
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
   }
 }

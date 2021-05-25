@@ -11,7 +11,6 @@
     background-image: url("../img/back-mobile@2x.jpg");
   }
 
-
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
@@ -28,14 +27,14 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 0;
-    margin-bottom: 73px;
+    margin-bottom: 60px;
     background-image:  url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/back-desktop@2x.jpg);
+      background-image: url("../img/back-desktop@2x.jpg");
       background-size: 100%;
     }
   }
@@ -50,6 +49,7 @@
   background-repeat:  no-repeat;
   background-size: 320px 286px;
   background-image: url("../img/phone-mobile@2x.png");
+
   @media (min-width: @tablet-width) {
     margin-top: -110px;
     padding-top: 203px;
@@ -60,23 +60,22 @@
     padding-bottom: 115px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/phone-tablet@2x.png);
+      background-image: url("../img/phone-tablet@2x.png");
     }
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-top: -145px;
+    margin-top: -110px;
     width: 940px;
-    padding-top: 218px;
-    padding-bottom: 115px;
+    padding: 210px 0 124px;
     background-image: url("../img/phone-desktop.png");
     background-size: 1050px ,645px;
     background-repeat: no-repeat;
     background-position: 19px 208px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/phone-desktop@2x.png);
+      background-image: url("../img/phone-desktop@2x.png");
     }
   }
 }
@@ -151,6 +150,11 @@
   color: fade(#d22856, 30%);
 }
 
+.download-app__button-app:focus {
+  background-color: #ffffff;
+  color: fade(#d22856, 30%);
+}
+
 
 .download-app__list {
   padding: 0;
@@ -161,6 +165,7 @@
   width: 204px;
   align-items: center;
   margin-bottom: 13px;
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-bottom: 26px;
@@ -182,7 +187,7 @@
   font-weight: 300;
   font-size: 14px;
   text-align: center;
-
+  
   @media (min-width: @tablet-width) {
     font-size: 18px;
     width: 308px;
@@ -223,7 +228,7 @@
   position: absolute;
   content: "";
   display: block;
-  background-image: url(../img/apple-logo.svg);
+  background-image: url("../img/apple-logo.svg");
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -235,7 +240,7 @@
   position: absolute;
   content: "";
   display: block;
-  background-image: url(../img/android-logo.svg);
+  background-image: url("../img/android-logo.svg");
   background-repeat: no-repeat;
   top: 0;
   left: 0x;
@@ -247,7 +252,7 @@
   position: absolute;
   content: "";
   display: block;
-  background-image: url(../img/microsoft-logo.svg);
+  background-image: url("../img/microsoft-logo.svg");
   background-repeat: no-repeat;
   top: 0;
   left: 0;

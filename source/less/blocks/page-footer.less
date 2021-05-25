@@ -4,36 +4,41 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-@media (min-width: @tablet-width) {
-  flex-direction: row;
-  padding-top: 20px;
-}
-@media (min-width: @desktop-width) {
-  padding-left: 10px;
-  padding-right: 0;
-  flex-direction: row;
-  padding-top: 62px;
-}
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 10px;
+    padding-right: 0;
+    flex-direction: row;
+    padding-top: 62px;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 37px;
-@media (min-width: @tablet-width) {
-  margin-right: 76px;
-}
-@media (min-width: @desktop-width) {
-  margin-right: 240px;
-}
+
+  @media (min-width: @tablet-width) {
+    margin-right: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 240px;
+  }
 }
 
-.page-footer__logo--desktop {
+.page-footer__desktop {
   display: none;
+
   @media (min-width: @desktop-width) {
     display: block;
   }
 }
 
-.page-footer__logo--nodesktop {
+.page-footer__nodesktop {
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -61,10 +66,13 @@
   width: 173px;
   align-items: center;
   margin-bottom: 35px;
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-right: 97px;
+    align-items: stretch;
   }
+
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-right: 226px;
@@ -92,6 +100,7 @@
 .page-footer__copyright {
   display: flex;
   padding-left: 75px;
+  
   @media (min-width: @tablet-width) {
     padding-left: 0;
     padding-top: 7px;
@@ -106,33 +115,38 @@
   opacity: 0.3;
 }
 
-.copyright__text {
+.page-footer__item:focus circle {
+  opacity: 0.3;
+}
+
+.page-footer__text {
   padding: 0;
   margin: 0;
   padding-top: 11px;
   margin-right: 13px;
   font-size: 14px;
   line-height: 18px;
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
   }
 }
 
-.copyright__link:hover path {
+.page-footer__html-academy:hover path {
   fill: #283645;
 }
 
-.copyright__link:active path {
+.page-footer__html-academy:active path {
   fill: #283645;
   opacity: 0.3;
 }
 
-.copyright__link {
+.page-footer__html-academy {
   width: 27px;
   height: 34px;
 }
 
-.copyright__link:focus path {
+.page-footer__html-academy:focus path {
   fill: #283645;
   opacity: 0.3;
 }

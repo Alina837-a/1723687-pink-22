@@ -1,10 +1,11 @@
-.title-wrapper {
+.intro__wrapper {
   padding-top: 95px;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
   margin-top: -66px;
+  background-color: #283645;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -12,50 +13,54 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
-    margin-top: -125px;
+    margin-top: -109px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-tablet@2x.jpg");
-  }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/back-desktop.jpg");
     padding-top: 74px;
     padding-bottom: 104px;
-    margin-top: -135px;
+    margin-top: -109px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/back-desktop@2x.jpg);
+      background-image: url("../img/back-desktop@2x.jpg");
     }
   }
 }
 
-.title-wrapper--tour {
+.intro__wrapper--tour {
   padding-bottom: 43px;
+
   @media (min-width: @tablet-width) {
-    padding-top: 191px;
+    padding-top: 176px;
     padding-bottom: 59px;
   }
+
   @media (min-width: @desktop-width) {
-    padding-top: 169px;
-    padding-bottom: 89px;
+    padding-top: 170px;
+    padding-bottom: 87px;
   }
 }
 
-.title-wrapper--photo {
+.intro__wrapper--photo {
   padding-bottom: 76px;
+
   @media (min-width: @tablet-width) {
-    padding-top: 191px;
+    padding-top: 176px;
     padding-bottom: 128px;
   }
+
   @media (min-width: @desktop-width) {
-    padding-top: 169px;
+    padding-top: 170px;
     padding-bottom: 89px;
   }
 }
 
-.title {
+.intro__title {
   font-family: "Open Sans Light", "Arial", sans-serif;
   padding: 0;
   margin: 0 auto;
@@ -64,27 +69,32 @@
   line-height: 33px;
   color: #ffffff;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
   }
 }
 
-.title__tour {
+.intro__title--tour {
   width: 236px;
+
   @media (min-width: @tablet-width) {
     width: 492px;
   }
+
   @media (min-width: @desktop-width) {
     width: 777px;
   }
 }
 
-.title__photo {
+.intro__title--photo {
   width: 172px;
+
   @media (min-width: @tablet-width) {
     width: 358px;
   }
+  
   @media (min-width: @desktop-width) {
     width: 357px;
   }
