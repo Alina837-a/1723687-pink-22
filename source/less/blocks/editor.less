@@ -94,7 +94,7 @@
   display: block;
   width: 320px;
   height: 1px;
-  background-color: rgba(40,54,69,.1);
+  background-color: rgba(40, 54, 69, 0.1);
   bottom: 0;
   left: -20px;
 
@@ -146,15 +146,15 @@
   opacity: 0.3;
 
   @media (min-width: @tablet-width) {
-    fill: #D22856;
+    fill: #d22856;
     opacity: 1;
   }
 }
 
 .editor__buttons svg {
   @media (min-width: @tablet-width) {
-  width: 25px;
-  height: 25px;
+    width: 25px;
+    height: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -164,7 +164,7 @@
 }
 
 
-.editor__item--contrast .editor__buttons svg{
+.editor__item--contrast .editor__buttons svg {
   @media (min-width: @tablet-width) {
     width: 16px;
     height: 16px;
@@ -177,22 +177,22 @@
 }
 
 .editor__buttons--active {
-  fill: #D22856;
+  fill: #d22856;
   opacity: 1;
 }
 
-.editor__buttons:active svg{
-  fill: #D22856;
+.editor__buttons:active svg {
+  fill: #d22856;
   opacity: 1;
 }
 
-.editor__buttons:hover svg{
+.editor__buttons:hover svg {
   fill: #283645;
   opacity: 0.5;
 }
 
-.editor__buttons:focus svg{
-  fill: #D22856;
+.editor__buttons:focus svg {
+  fill: #d22856;
   opacity: 1;
 }
 
@@ -233,8 +233,7 @@
 
 input[type="range"] {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-apperance: none;
+  appearance: none;
   height: 2px;
   width: 240px;
   background-color: #283645;
@@ -249,16 +248,7 @@ input[type="range"] {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #ffffff;
-  border: 2px solid #d22856;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   background-color: #ffffff;
   border: 2px solid #d22856;
   width: 14px;
@@ -318,7 +308,7 @@ input[type="range"]::-webkit-slider-thumb {
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
-  
+
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     margin-right: 0;

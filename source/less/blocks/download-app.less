@@ -1,6 +1,6 @@
 .download-app {
   background-image: url("../img/phone-mobile.png"), url("../img/back-mobile.jpg");
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 461px;
   margin-bottom: 40px;
@@ -28,7 +28,7 @@
   @media (min-width: @desktop-width) {
     padding-bottom: 0;
     margin-bottom: 60px;
-    background-image:  url("../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
@@ -45,16 +45,19 @@
   padding-top: 90px;
   margin-top: -65px;
   background-image: url("../img/phone-mobile.png");
-  background-position: 0px 176px;
-  background-repeat:  no-repeat;
+  background-position: 0 176px;
+  background-repeat: no-repeat;
   background-size: 320px 286px;
-  background-image: url("../img/phone-mobile@2x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: -110px;
     padding-top: 203px;
-    background-image:   url("../img/phone-tablet.png");
-    background-size: 660px ,540px;
+    background-image: url("../img/phone-tablet.png");
+    background-size: 660px 540px;
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 115px;
@@ -65,12 +68,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     margin-top: -110px;
     width: 940px;
     padding: 210px 0 124px;
     background-image: url("../img/phone-desktop.png");
-    background-size: 1050px ,645px;
+    background-size: 1050px 645px;
     background-repeat: no-repeat;
     background-position: 19px 208px;
 
@@ -119,7 +121,6 @@
   padding: 16px 33px;
   width: 280px;
   margin-bottom: 32px;
-  box-sizing: border-box;
   border-radius: 29px;
   text-decoration: none;
   font-weight: 700;
@@ -187,7 +188,7 @@
   font-weight: 300;
   font-size: 14px;
   text-align: center;
-  
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
     width: 308px;
@@ -224,7 +225,7 @@
   height: 41px;
 }
 
-.download-app__app-store::before{
+.download-app__app-store::before {
   position: absolute;
   content: "";
   display: block;
@@ -236,19 +237,19 @@
   height: 63px;
 }
 
-.download-app__google-play::before{
+.download-app__google-play::before {
   position: absolute;
   content: "";
   display: block;
   background-image: url("../img/android-logo.svg");
   background-repeat: no-repeat;
   top: 0;
-  left: 0x;
+  left: 0;
   width: 43px;
   height: 47px;
 }
 
-.download-app__microsoft::before{
+.download-app__microsoft::before {
   position: absolute;
   content: "";
   display: block;
